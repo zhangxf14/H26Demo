@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	
+		<LinearLayout
+		    android:id="@+id/loContent"
+		    android:layout_width="fill_parent"
+		    android:layout_height="350dp"
+		    android:layout_margin="10dp"
+		    android:orientation="vertical" />
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent" >
+
+			<Button
+			    android:id="@+id/btnReadMCU"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="读  MCU " />
+
+			<Button
+			    android:id="@+id/btnSetTemperatureParas"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="配置参数" />
+
+			<TextView
+			    android:id="@+id/tvTemperature"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="40dp"
+			    android:text="当前温度" />
+
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent" >
+
+			<Button
+			    android:id="@+id/btnStartMeasurement"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="开始测量" />
+
+			<Button
+			    android:id="@+id/btnStopMeasurement"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="停止测量" />
+
+			<Button
+			    android:id="@+id/btnReadTemperature"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="读取温度" />
+
+			<EditText
+			    android:id="@+id/etLength"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:ems="10"
+			    android:hint="长度"
+			    android:inputType="number"
+			    android:text="0" >
+
+			    <requestFocus />
+			</EditText>
+
+		</LinearLayout>
+
+	     <TextView
+	         android:id="@+id/tvResult"
+	         android:layout_width="fill_parent"
+	         android:layout_height="match_parent"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginTop="1dp"
+	         android:text="Read Result:" />
+	
+	</LinearLayout>
+</ScrollView>
